@@ -22,13 +22,12 @@ body.theme-dark{
 
 * { 
     box-sizing:border-box; 
-    scroll-behavior:smooth;
-
 }
 
 html,body { 
     margin:0;
     padding:0; 
+    scroll-behavior:smooth;
 }
 
 main {
@@ -198,7 +197,7 @@ button:hover { filter: brightness(0.95); }
 }
 
 .contacts-button{
-    margin-top: var( --big-space-1);
+    margin-top: var( --space-2);
     margin-bottom: var(--space-3);
 }
 
