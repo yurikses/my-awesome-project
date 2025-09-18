@@ -11,31 +11,40 @@
     <script src="https://unpkg.com/imask"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">Скороходник</a>
+    <header class="header">
+        <a class="title"  href="index.html">Скороходник</a>
         <!-- Главное меню навигации -->
-        <nav>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="main-nav_list"><a href="index.html">Главная</a></li>
+                <li class="main-nav_list"><a href="about.html">О нас</a></li>
+                <li class="main-nav_list"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <nav aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a>
-            <span>Контакты</span>
+    <main class="main-box">
+        <nav class="page-path " aria-label="Хлебные крошки">
+            <a class="page-path_link" href="index.html">Главная</a>
+            <span class="page-path_text">Контакты</span>
         </nav>
-        <h1>Контакты</h1>
-        <section>
-            <h2>Директор</h2>
-            <p>Контактные данные директора</p>
-        </section>
-        <section>
-            <h2>Наша команда</h2>
-        </section>
-        <button id="openDialog" type="button">Написать нам</button>
+        <h1 class="section__title ">Контакты</h1>
+        <div class="flex-container--3 contacts-container ">
+            <section class="contact-section_element section">
+                <h2 class="section__title">Директор</h2>
+                <p class="contact-section_text">Контактные данные директора</p>
+            </section>
+            <section class="contact-section_element section">
+                <h2 class="section__title">Наша команда</h2>
+                <p class="contact-section_text">Контактные данные </p>
+                <p class="contact-section_text">Контактные данные </p>
+                <p class="contact-section_text">Контактные данные </p>
+            </section>
+        </div>
+
+        <h3>Станьте частью нашей истории!</h3>
+
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-161186542&id=456239552&hash=3566b870c2cabe22" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <button id="openDialog" type="button" class="contacts-button">Написать нам</button>
         <dialog id="contactDialog" aria-labelledby="dialogTitle">
             <form id="contactForm" method="dialog" novalidate>
                 <label for="nameInput">Имя</label>
@@ -68,10 +77,16 @@
             </form>
         </dialog>
     </main>
-    <footer>
-        <p>&copy; 2023 Скороходик. Все права защищены.</p>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Скороходник. Все права защищены.</p>
         <p>Телефон: +7 (123) 456-78-90</p>
+        <div class="footer-img-container">
+            <img class="" src="../assets/The_Blue_Marble,_AS17-148-22727.jpg" alt="Земля">
+        </div>
+        
     </footer>
+
 <script src="../js/script.js"></script>
 </body>
 </html>
