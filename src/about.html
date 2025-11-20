@@ -2,48 +2,170 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel = "stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас - Скороходник</title>
-    <meta name="description" content="Узнайте больше о нашей компнии и истории">
+    <meta name="description" content="Узнайте больше о нашей компании и истории">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <a class="title"  href="index.html">Скороходник</a>
-        <!-- Главное меню навигации -->
-        <nav class="main-nav">
-            <ul>
-                <li class="main-nav_list"><a href="index.html">Главная</a></li>
-                <li class="main-nav_list"><a href="about.html">О нас</a></li>
-                <li class="main-nav_list"><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-box">
-        <nav class="page-path " aria-label="Хлебные крошки">
-            <a class="page-path_link" href="index.html">Главная</a>
-            <span class="page-path_text">О нас</span>
-        </nav>
+<!-- Шапка сайта -->
+<header>
+<!--    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">-->
+<!--        <div class="container-fluid-custom">-->
+<!--            <img class="img-fluid rounded-circle text-center" src="../assets/heh_mobility_medical_disability_aid_wheelchair_icon_267675.png" alt="" style="height: 30px; width: auto;">-->
+<!--            <a class="navbar-brand" href="index.html">Скороходник</a>-->
+<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                <ul class="navbar-nav">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="index.html">Главная</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link active" aria-current="page" href="about.html">О нас</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="contacts.html">Контакты</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid-custom">
+            <img class="img-fluid rounded-circle" src="../assets/heh_mobility_medical_disability_aid_wheelchair_icon_267675.png" alt="" style="height: 30px; width: auto;">
+            <a class="navbar-brand" href="index.html">Скороходник</a>
 
-        <h1>О нашей компании</h1>
-        <div class="info-container">
-            <section class="section">
-                <h2>Наша история</h2>
-                <p>Текст о том, как все начиналось...</p>
-            </section>
-            <section class="section">
-                <h2>Наша команда</h2>
-            </section>
+            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>-->
+            <div class="navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+</header>
 
-    </main>
-    <footer class="main-footer">
-        <p>&copy; 2023 Скороходник. Все права защищены.</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
-        <div class="footer-img-container">
-            <img class="" src="../assets/The_Blue_Marble,_AS17-148-22727.jpg" alt="Земля">
-        </div>
-    </footer>
+<!-- Основное содержимое -->
+<main class="container-fluid-custom">
+    <!-- Хлебные крошки -->
+    <nav aria-label="breadcrumb" class="my-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">О нас</li>
+        </ol>
+    </nav>
+
+    <div class="layout-row my-3">
+        <h1 class="layout-col center-text page-title">О нашей компании</h1>
+    </div>
+
+    <div class="container-md-custom my-auto">
+        <section class="layout-row mb-space">
+            <div class="layout-col">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Наша история</h2>
+                        <p class="card-text">
+                            Компания "Скороходник" была основана в 2015 году с миссией предоставлять инновационные решения для малого и среднего бизнеса. Начав как небольшой стартап в Москве, мы быстро выросли благодаря нашей приверженности качеству и клиентоориентированности.
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>2015:</strong> Основание компании и запуск первого проекта — платформы для автоматизации логистики.</li>
+                            <li class="list-group-item"><strong>2018:</strong> Расширение команды и открытие офиса в Санкт-Петербурге.</li>
+                            <li class="list-group-item"><strong>2020:</strong> Разработка и запуск мобильного приложения "Скороходник" для удобного управления заказами.</li>
+                            <li class="list-group-item"><strong>2023:</strong> Получение награды "Лучший IT-продукт года" на национальной выставке технологий.</li>
+                            <li class="list-group-item"><strong>2025:</strong> Планируем выход на международный рынок с новыми решениями в области цифровизации.</li>
+                        </ul>
+                        <p class="card-text mt-3">
+                            Сегодня "Скороходник" — это команда профессионалов, работающих над созданием технологий, которые делают бизнес проще и эффективнее.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-space">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Наша команда</h2>
+                    <div class="grid-auto-3">
+                        <div>
+                            <div class="card h-100">
+                                <img src="https://placehold.co/200x200" class="card-img-top" alt="Анна Смирнова">
+                                <div class="card-body">
+                                    <h5 class="card-title">Анна Смирнова</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Менеджер проектов</h6>
+                                    <p class="card-text">Анна отвечает за координацию проектов и обеспечивает их своевременное выполнение. Ее опыт в управлении проектами помогает нашей команде достигать поставленных целей.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card h-100">
+                                <img src="https://placehold.co/200x200" class="card-img-top" alt="Михаил Кузнецов">
+                                <div class="card-body">
+                                    <h5 class="card-title">Михаил Кузнецов</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Ведущий разработчик</h6>
+                                    <p class="card-text">Михаил — эксперт в разработке веб-приложений и архитектуры программного обеспечения. Он руководит технической частью наших проектов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card h-100">
+                                <img src="https://placehold.co/200x200" class="card-img-top" alt="Екатерина Иванова">
+                                <div class="card-body">
+                                    <h5 class="card-title">Екатерина Иванова</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Специалист по маркетингу</h6>
+                                    <p class="card-text">Екатерина разрабатывает стратегии продвижения и отвечает за бренд "Скороходник". Ее креативный подход привлекает новых клиентов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Подвал сайта -->
+<footer class="footer-layout bg-body-secondary mt-5 p-3">
+    <div class="layout-col-fixed footer-img-box">
+        <img class="img-thumbnail rounded-circle" src="../assets/The_Blue_Marble,_AS17-148-22727.jpg" alt="Земля">
+    </div>
+    <div class="layout-col">
+        <p>&copy; 2025 Скороходник. Все права защищены.</p>
+        <p>Телефон: <span class="copy">+7 (123) 456-78-90</span></p>
+    </div>
+</footer>
+
+<script>
+    const span = document.querySelector(".copy");
+
+    span.onclick = function() {
+        document.execCommand("copy");
+    }
+
+    span.addEventListener("copy", function(event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+            event.clipboardData.setData("text/plain", span.textContent);
+            console.log(event.clipboardData.getData("text"));
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
